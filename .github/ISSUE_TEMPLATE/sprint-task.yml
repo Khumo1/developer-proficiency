@@ -1,13 +1,53 @@
 # .github/ISSUE_TEMPLATE/sprint-task.yml
----
-name: 🏷 Sprint Task
-description: A ticket for our 2-week Sprint
-title: "[SPRINT] "
-labels: ["Backlog","type:Task"]
-assignees: ["@Khumo1"]
-projects:
-  - https://github.com/users/Khumo1/projects/1
----
 
-## Description
-…
+name: 🏷 Sprint Task
+description: Create a new sprint task and have it auto-added to Backlog
+title: "[SPRINT] "
+labels: ["backlog", "type:Task"]
+assignees: ["@your-username"]
+projects:
+  - your-org/your-repo#17
+
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Task Title
+      description: A brief summary of the task
+      placeholder: Scaffold Fastify service…
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Detailed story or steps
+      placeholder: |
+        - Step 1: …
+        - Step 2: …
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is this?
+      options:
+        - High
+        - Med
+        - Low
+      default: Med
+
+  - type: input
+    id: due
+    attributes:
+      label: Due Date
+      description: YYYY-MM-DD
+      placeholder: 2025-05-10
+      required: true
+
+  - type: assignees
+    id: assignees
+    attributes:
+      label: Assign to
+      description: Who is responsible?
