@@ -4,7 +4,7 @@ title: "[SPRINT] "
 labels: ["backlog", "type:Task"]
 assignees: ["@your-username"]
 projects:
-  - your-org/your-repo#17
+  - https://github.com/users/Khumo1/projects/1
 
 body:
   - type: input
@@ -35,14 +35,6 @@ body:
         - Med
         - Low
       default: Med
-
-  - type: input
-    id: due
-    attributes:
-      label: Due Date
-      description: Enter in YYYY-MM-DD format
-      placeholder: 2025-05-10
-      required: true
 
   - type: assignees
     id: assignees
