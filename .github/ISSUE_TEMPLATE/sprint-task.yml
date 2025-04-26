@@ -1,0 +1,13 @@
+# .github/ISSUE_TEMPLATE/sprint-task.yml
+---
+name: 🏷 Sprint Task
+about: A ticket for our 2-week Sprint
+title: "[SPRINT] "
+labels: ["Backlog","type:Task"]
+assignees: ["@Khumo1"]
+projects:
+  - your-org/your-repo#<PROJECT_NUMBER>
+---
+
+## Description
+…
